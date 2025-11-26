@@ -41,7 +41,7 @@ jobs:
       # STEP 4: Security Scan with Trivy
       # ============================================
       - name: Run Trivy vulnerability scanner
-        uses: aquasecurity/trivy-action@v0.20.0
+        uses: aquasecurity/trivy-action@0.21.0
         with:
           image-ref: ${{ env.IMAGE_NAME }}:${{ github.sha }}
           format: table
